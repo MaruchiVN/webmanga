@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111318">
+  <meta name="description" content="Khung giao diện trang chủ đọc manga, sẵn sàng mở rộng.">
+  <title>Manga — Trang chủ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Manga — Trang chủ">
+        <span class="brand-name">MANGA</span>
+      </a>
+      <form class="search-form" role="search" action="#" method="get">
+        <label class="visually-hidden" for="site-search">Ô tìm kiếm</label>
+        <span class="search-icon" aria-hidden="true"></span>
+        <input id="site-search" type="text" name="q" aria-label="Ô tìm kiếm" autocomplete="off">
+      </form>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" type="button" aria-label="Chuyển sang giao diện sáng" title="Chuyển giao diện">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.4 8.4 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"/></svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="page-shell" id="home">
+    <aside class="sidebar" id="site-sidebar" aria-label="Điều hướng chính">
+      <div class="sidebar-content">
+        <p class="nav-label">Khám phá</p>
+        <nav class="primary-nav" aria-label="Khám phá">
+          <a class="nav-link is-active" href="#home" aria-current="page"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1V10Z"/></svg><span>Trang chủ</span></a>
+        </nav>
+      </div>
+    </aside>
+    <main class="main-content" id="main-content" tabindex="-1">
+      <div class="content-wrap">
+        <section class="section-block" id="latest" aria-labelledby="latest-title">
+          <div class="section-heading"><div><p class="section-kicker">DÀNH CHO BẠN</p><h2 id="latest-title">Mới gần đây</h2></div></div>
+          <div class="story-grid">
+            <article class="story-card" aria-label="Thiên Sứ Nhà Bên">
+              <a class="story-cover-link" href="#read-tenshi" aria-label="Đọc truyện Thiên Sứ Nhà Bên">
+                <img class="story-cover" src="biatruyen/tenshi.jpg" alt="Ảnh bìa truyện Thiên Sứ Nhà Bên" loading="lazy">
+                <span class="story-cover-overlay" aria-hidden="true">
+                  <span class="read-action">
+                    <svg viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></svg>
+                    <span>Đọc truyện</span>
+                  </span>
+                </span>
+              </a>
+              <h3 class="story-title">Thiên Sứ Nhà Bên</h3>
+              <p class="story-status">updating...</p>
+            </article>
+          </div>
+        </section>
+      </div>
+      <footer class="site-footer"><span>Maruchi</span></footer>
+    </main>
+  </div>
+</body>
+</html>
